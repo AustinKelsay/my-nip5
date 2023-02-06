@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 nostr_data = {
     "names": {
-        "devplebbitcoin": "022522f88059c684e200cbfec9f045eb4c9ed57c158e0294cd01eb81de62e211"
+        "bitcoinplebdev": "8172b9205247ddfe99b783320782d0312fa305a199fb2be8a3e6563e20b4f0e2"
     }
 }
 
