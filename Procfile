@@ -1,1 +1,1 @@
-web: gunicorn main:app --host=0.0.0.0 --port=${PORT:-5000}
+web: FLASK_APP=main FLASK_ENV=production flask run --host=0.0.0.0 --port=$PORT
