@@ -20,8 +20,6 @@ def nostr_json():
         return "", 404
     return jsonify(nostr_data)
 
-# make a welcome route that lets the user know the server is online
-
 
 @app.route('/')
 def welcome():
