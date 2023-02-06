@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 nostr_data = {
     "names": {
-        "bob": "b0635d6a9851d3aed0cd6c495b282167acf761729078d975fc341b22650b07b9"
+        "devplebbitcoin": "022522f88059c684e200cbfec9f045eb4c9ed57c158e0294cd01eb81de62e211"
     },
     "relays": {
         "b0635d6a9851d3aed0cd6c495b282167acf761729078d975fc341b22650b07b9": ["wss://relay.example.com", "wss://relay2.example.com"]
