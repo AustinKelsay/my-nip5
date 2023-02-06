@@ -14,7 +14,12 @@ def nostr_json():
     name = request.args.get("name")
     if name not in nostr_data["names"]:
         return "", 404
-    return jsonify(nostr_data)
+    response = jsonify(nostr_data)
+    response.headers["Content-Type"] = "application/json"
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    response.headers.add("Access-Control-Allow-Headers", "*")
+    response.headers.add("Access-Control-Allow-Methods", "GET")
+    return response
 
 
 @app.route('/')
