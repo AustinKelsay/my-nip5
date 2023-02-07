@@ -20,8 +20,3 @@ def nostr_json():
     response.headers.add("Access-Control-Allow-Headers", "*")
     response.headers.add("Access-Control-Allow-Methods", "GET")
     return response
-
-
-@app.route('/')
-def welcome():
-    return "server is online"
