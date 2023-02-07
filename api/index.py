@@ -25,7 +25,3 @@ def nostr_json():
 @app.route('/')
 def welcome():
     return "server is online"
-
-
-if __name__ == '__main__':
-    app.run()
