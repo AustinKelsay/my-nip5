@@ -1,6 +1,6 @@
 # my-nip5
 
-This is a single purpose Flask application that serves a nostr.json endpoint for NIP-05 compatibility. The purpose of my-nip5 is to provide a simple free template that allows you to deploy a server for verifying your NOSTR profile with YOUR OWN custom domain.
+This is a simple, ready-to-deploy Flask application designed to serve a nostr.json endpoint for NIP-05 compatibility. The purpose of this template is to make it easy and free for you to host and verify your NOSTR profile with your own custom domain, by deploying it on Vercel. With just a few updates to the provided code, you can have your own NIP-05 verification server up and running in no time.
 
 ## Updating the Variables
 
