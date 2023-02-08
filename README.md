@@ -9,9 +9,6 @@ To update the variables in the nostr_data dictionary, open the app.py file and u
 `nostr_data = {
     "names": {
         "<YOUR NOSTR ALIAS>": "<YOUR NOSTR PUBLIC KEY IN HEX FORMAT>"
-    },
-    "relays": {
-        "<YOUR NOSTR PUBLIC KEY IN HEX FORMAT>": ["wss://relay.example.com", "wss://relay2.example.com"]
     }
 }`
 
