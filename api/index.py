@@ -4,7 +4,10 @@ app = Flask(__name__)
 
 nostr_data = {
     "names": {
-        "bitcoinplebdev": "8172b9205247ddfe99b783320782d0312fa305a199fb2be8a3e6563e20b4f0e2"
+        "<YOUR NOSTR ALIAS>": "<YOUR NOSTR PUBLIC KEY IN HEX FORMAT>"
+    },
+    "relays": {
+        "<YOUR NOSTR PUBLIC KEY IN HEX FORMAT>": ["wss://relay.example.com", "wss://relay2.example.com"]
     }
 }
 
@@ -12,9 +15,12 @@ nostr_data = {
 @app.route('/.well-known/nostr.json')
 def nostr_json():
     name = request.args.get("name")
-    if name not in nostr_data["names"]:
+    public_key = nostr_data["names"].get(name)
+    if public_key is None:
         return "", 404
-    response = jsonify(nostr_data)
+
+    response_data = {"relays": nostr_data["relays"].get(public_key, [])}
+    response = jsonify(response_data)
     response.headers["Content-Type"] = "application/json"
     response.headers.add("Access-Control-Allow-Origin", "*")
     response.headers.add("Access-Control-Allow-Headers", "*")
