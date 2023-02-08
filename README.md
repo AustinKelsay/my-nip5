@@ -20,9 +20,9 @@ To update the variables in the nostr_data dictionary, open the app.py file and u
 To deploy this application to Vercel, follow these steps:
 
 - Clone this repository to your local machine:
-`git clone https://github.com/<YOUR REPOSITORY>.git`
+`git clone https://github.com/AustinKelsay/my-nip5.git`
 - Navigate to the project directory:
-`cd nostr-json-endpoint`
+`cd my-nip5`
 - Log in to your Vercel account:
 `vercel login`
 - Initialize the project with Vercel:
@@ -30,7 +30,7 @@ To deploy this application to Vercel, follow these steps:
 - Deploy the application to Vercel:
 `vercel`
 
-After the deployment is complete, you will receive a URL for your application, for example https://nostr-json-endpoint.vercel.app.
+After the deployment is complete, you will receive a URL for your application, for example https://my-nip5.vercel.app.
 
 ## Adding a Custom Domain
 
