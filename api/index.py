@@ -5,6 +5,9 @@ app = Flask(__name__)
 nostr_data = {
     "names": {
         "<YOUR NOSTR ALIAS>": "<YOUR NOSTR PUBLIC KEY IN HEX FORMAT>"
+    },
+    "relays": {
+        "<YOUR NOSTR PUBLIC KEY IN HEX FORMAT>": [ "wss://relay.mutinywallet.com/", "wss://relay.primal.net/" ]
     }
 }
 
